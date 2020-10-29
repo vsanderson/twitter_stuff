@@ -1,0 +1,9 @@
+#index.haml
+
+
+.h1 Some Tweets
+
+= @client.home_timeline.each do |tweet|
+    %br= tweet.text
+    %a{:title => tweet.uri, :href => tweet.uri} tweet.uri
+%p 

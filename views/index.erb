@@ -1,0 +1,11 @@
+
+
+
+<h1> Some tweets on my timeline </h1>
+
+<% @client.home_timeline.each do | tweet | %>
+     <br> <%= tweet.text %>
+     <br><a href = <%= tweet.uri %>> <%= tweet.uri %> </a>
+     <% end %>
+     
+     
